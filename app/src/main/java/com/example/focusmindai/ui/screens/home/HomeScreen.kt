@@ -50,14 +50,14 @@ fun HomeScreen() {
             modifier = Modifier
                 .padding(bottom = 20.dp)
                 .border(width = 0.5.dp, color = Color.Black, shape = RoundedCornerShape(10))
-                .padding(10.dp)
+                .padding(15.dp)
                 .fillMaxWidth(),
                 horizontalAlignment = Alignment.CenterHorizontally,
         ) {
             Text(
                 text = "20:15",
                 style = MaterialTheme.typography.displayLarge,
-                modifier = Modifier.padding(bottom = 10.dp)
+                modifier = Modifier.padding(bottom = 5.dp)
             )
 
             Text(
@@ -76,6 +76,10 @@ fun HomeScreen() {
             Text(
                 text = "Daily Goal",
                 style = MaterialTheme.typography.titleLarge,
+            )
+            Text(
+                text = "3/4 focus sessions",
+                style = MaterialTheme.typography.bodyLarge
             )
         }
     }
