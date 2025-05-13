@@ -56,7 +56,13 @@ fun HomeScreen() {
         ) {
             Text(
                 text = "20:15",
-                style = MaterialTheme.typography.displayLarge
+                style = MaterialTheme.typography.displayLarge,
+                modifier = Modifier.padding(bottom = 10.dp)
+            )
+
+            Text(
+                text = "Read book",
+                style = MaterialTheme.typography.titleLarge
             )
         }
     }
