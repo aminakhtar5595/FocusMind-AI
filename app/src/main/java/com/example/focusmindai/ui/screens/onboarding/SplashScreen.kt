@@ -5,6 +5,8 @@ import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.width
+import androidx.compose.material3.MaterialTheme
+import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
@@ -16,7 +18,8 @@ import coil.compose.AsyncImage
 fun SplashScreen() {
     Column (
         modifier = Modifier
-            .fillMaxSize(),
+            .fillMaxSize()
+            .padding(10.dp),
         verticalArrangement = Arrangement.Center,
         horizontalAlignment = Alignment.CenterHorizontally,
     ) {
@@ -25,6 +28,12 @@ fun SplashScreen() {
             contentDescription = "App logo",
             modifier = Modifier
                 .width(120.dp),
+        )
+
+        Text(
+            text = "Focus & Pomodoro Timer",
+            style = MaterialTheme.typography.headlineLarge.copy(textAlign = TextAlign.Center),
+            modifier = Modifier.padding(vertical = 20.dp)
         )
     }
 }
