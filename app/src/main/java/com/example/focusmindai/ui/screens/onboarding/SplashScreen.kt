@@ -19,7 +19,7 @@ fun SplashScreen() {
     Column (
         modifier = Modifier
             .fillMaxSize()
-            .padding(10.dp),
+            .padding(20.dp),
         verticalArrangement = Arrangement.Center,
         horizontalAlignment = Alignment.CenterHorizontally,
     ) {
@@ -33,7 +33,13 @@ fun SplashScreen() {
         Text(
             text = "Focus & Pomodoro Timer",
             style = MaterialTheme.typography.headlineLarge.copy(textAlign = TextAlign.Center),
-            modifier = Modifier.padding(vertical = 20.dp)
+            modifier = Modifier.padding(vertical = 10.dp)
+        )
+
+        Text(
+            text = "Focus & Pomodoro technique helps you to focus",
+            style = MaterialTheme.typography.headlineSmall.copy(textAlign = TextAlign.Center),
+            modifier = Modifier.padding(bottom = 5.dp)
         )
     }
 }
