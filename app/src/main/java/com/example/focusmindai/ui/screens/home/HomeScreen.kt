@@ -129,5 +129,40 @@ fun HomeScreen() {
                 )
             }
         }
+
+        Row (
+            modifier = Modifier.fillMaxWidth(),
+            horizontalArrangement = Arrangement.SpaceBetween
+        ) {
+            Button(
+                onClick = {  },
+                shape = RoundedCornerShape(10.dp),
+                border = BorderStroke(1.5.dp, Color(0xFF4F7CCB)),
+                colors = ButtonDefaults.buttonColors(
+                    contentColor = Color(0xFF4F7CCB),
+                    containerColor = Color.Transparent
+                ),
+            ) {
+                Text(
+                    text = "Add Task",
+                    style = MaterialTheme.typography.titleLarge
+                )
+            }
+
+            Button(
+                onClick = {  },
+                shape = RoundedCornerShape(10.dp),
+                border = BorderStroke(1.5.dp, Color(0xFF4F7CCB)),
+                colors = ButtonDefaults.buttonColors(
+                    contentColor = Color(0xFF4F7CCB),
+                    containerColor = Color.Transparent
+                ),
+            ) {
+                Text(
+                    text = "View Task",
+                    style = MaterialTheme.typography.titleLarge
+                )
+            }
+        }
     }
 }
