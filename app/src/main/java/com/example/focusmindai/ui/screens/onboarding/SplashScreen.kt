@@ -1,15 +1,22 @@
 package com.example.focusmindai.ui.screens.onboarding
 
+import androidx.compose.foundation.BorderStroke
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.PaddingValues
 import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.width
+import androidx.compose.foundation.shape.RoundedCornerShape
+import androidx.compose.material3.Button
+import androidx.compose.material3.ButtonDefaults
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import coil.compose.AsyncImage
@@ -39,7 +46,24 @@ fun SplashScreen() {
         Text(
             text = "Focus & Pomodoro technique helps you to focus",
             style = MaterialTheme.typography.headlineSmall.copy(textAlign = TextAlign.Center),
-            modifier = Modifier.padding(bottom = 5.dp)
+            modifier = Modifier.padding(bottom = 50.dp)
         )
+
+        Button(
+            onClick = {  },
+            shape = RoundedCornerShape(10.dp),
+            contentPadding = PaddingValues(vertical = 15.dp),
+            border = BorderStroke(1.5.dp, Color(0xFF4F7CCB)),
+            colors = ButtonDefaults.buttonColors(
+                contentColor = Color(0xFF4F7CCB),
+                containerColor = Color.Transparent
+            ),
+            modifier = Modifier.fillMaxWidth()
+        ) {
+            Text(
+                text = "GET STARTED",
+                style = MaterialTheme.typography.titleLarge,
+            )
+        }
     }
 }
