@@ -1,9 +1,11 @@
 package com.example.focusmindai.ui.screens.home
 
+import androidx.compose.foundation.BorderStroke
 import androidx.compose.foundation.border
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.PaddingValues
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
@@ -13,6 +15,8 @@ import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.ArrowForward
 import androidx.compose.material.icons.filled.Menu
+import androidx.compose.material3.Button
+import androidx.compose.material3.ButtonDefaults
 import androidx.compose.material3.Icon
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
@@ -106,8 +110,24 @@ fun HomeScreen() {
             Text(
                 text = "AI Tip of the Day",
                 style = MaterialTheme.typography.titleLarge,
-                modifier = Modifier.padding(bottom = 5.dp)
+                modifier = Modifier.padding(bottom = 10.dp)
             )
+            Button(
+                onClick = {  },
+                shape = RoundedCornerShape(10.dp),
+                contentPadding = PaddingValues(vertical = 10.dp),
+                border = BorderStroke(1.5.dp, Color(0xFF4F7CCB)),
+                colors = ButtonDefaults.buttonColors(
+                    contentColor = Color(0xFF4F7CCB),
+                    containerColor = Color.Transparent
+                ),
+                modifier = Modifier.fillMaxWidth()
+            ) {
+                Text(
+                    text = "Start of the day",
+                    style = MaterialTheme.typography.titleLarge
+                )
+            }
         }
     }
 }
