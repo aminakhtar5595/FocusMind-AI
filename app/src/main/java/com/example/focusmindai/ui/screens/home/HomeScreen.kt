@@ -65,5 +65,18 @@ fun HomeScreen() {
                 style = MaterialTheme.typography.titleLarge
             )
         }
+
+        Column (
+            modifier = Modifier
+                .padding(bottom = 20.dp)
+                .border(width = 0.5.dp, color = Color.Black, shape = RoundedCornerShape(10))
+                .padding(15.dp)
+                .fillMaxWidth(),
+        ) {
+            Text(
+                text = "Daily Goal",
+                style = MaterialTheme.typography.titleLarge,
+            )
+        }
     }
 }
