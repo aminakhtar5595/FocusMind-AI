@@ -2,6 +2,7 @@ package com.example.focusmindai.ui.screens.home
 
 import androidx.compose.foundation.border
 import androidx.compose.foundation.clickable
+import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.fillMaxSize
@@ -10,6 +11,7 @@ import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.filled.ArrowForward
 import androidx.compose.material.icons.filled.Menu
 import androidx.compose.material3.Icon
 import androidx.compose.material3.MaterialTheme
@@ -66,21 +68,33 @@ fun HomeScreen() {
             )
         }
 
-        Column (
+        Row (
             modifier = Modifier
                 .padding(bottom = 20.dp)
                 .border(width = 0.5.dp, color = Color.Black, shape = RoundedCornerShape(10))
                 .padding(15.dp)
                 .fillMaxWidth(),
+                horizontalArrangement = Arrangement.SpaceBetween
         ) {
-            Text(
-                text = "Daily Goal",
-                style = MaterialTheme.typography.titleLarge,
+            Column {
+                Text(
+                    text = "Daily Goal",
+                    style = MaterialTheme.typography.titleLarge,
+                )
+                Text(
+                    text = "3/4 focus sessions",
+                    style = MaterialTheme.typography.bodyLarge
+                )
+            }
+
+            Icon(
+                imageVector = Icons.Filled.ArrowForward,
+                contentDescription = "Arrow Forward",
+                modifier = Modifier
+                    .size(30.dp)
+                    .clickable { },
             )
-            Text(
-                text = "3/4 focus sessions",
-                style = MaterialTheme.typography.bodyLarge
-            )
+
         }
     }
 }
