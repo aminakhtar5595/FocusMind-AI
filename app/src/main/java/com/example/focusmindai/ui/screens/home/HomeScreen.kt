@@ -94,7 +94,20 @@ fun HomeScreen() {
                     .size(30.dp)
                     .clickable { },
             )
+        }
 
+        Column (
+            modifier = Modifier
+                .padding(bottom = 20.dp)
+                .border(width = 0.5.dp, color = Color.Black, shape = RoundedCornerShape(10))
+                .padding(15.dp)
+                .fillMaxWidth(),
+        ) {
+            Text(
+                text = "AI Tip of the Day",
+                style = MaterialTheme.typography.titleLarge,
+                modifier = Modifier.padding(bottom = 5.dp)
+            )
         }
     }
 }
