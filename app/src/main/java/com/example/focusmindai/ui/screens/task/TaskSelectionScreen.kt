@@ -35,6 +35,11 @@ fun TaskSelectionScreen() {
                     .size(30.dp)
                     .clickable { }
             )
+            Text(
+                text = "TASK SELECTION",
+                style = MaterialTheme.typography.headlineLarge.copy(textAlign = TextAlign.Center),
+                modifier = Modifier.fillMaxWidth()
+            )
         }
     }
 }
