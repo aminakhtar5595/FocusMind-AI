@@ -59,6 +59,11 @@ fun TaskSelectionScreen() {
                 style = MaterialTheme.typography.displayLarge,
                 modifier = Modifier.padding(bottom = 5.dp)
             )
+
+            Text(
+                text = "Study biology",
+                style = MaterialTheme.typography.titleLarge
+            )
         }
     }
 }
