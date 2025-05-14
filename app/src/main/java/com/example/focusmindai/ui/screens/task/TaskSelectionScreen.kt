@@ -1,8 +1,10 @@
 package com.example.focusmindai.ui.screens.task
 
+import androidx.compose.foundation.BorderStroke
 import androidx.compose.foundation.border
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.PaddingValues
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
@@ -14,6 +16,8 @@ import androidx.compose.material.icons.filled.ArrowBack
 import androidx.compose.material.icons.filled.ArrowForward
 import androidx.compose.material.icons.filled.Menu
 import androidx.compose.material.icons.filled.Settings
+import androidx.compose.material3.Button
+import androidx.compose.material3.ButtonDefaults
 import androidx.compose.material3.Icon
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
@@ -95,6 +99,23 @@ fun TaskSelectionScreen() {
                 style = MaterialTheme.typography.bodyLarge,
                 modifier = Modifier.padding(vertical = 10.dp)
             )
+
+            Button(
+                onClick = {  },
+                shape = RoundedCornerShape(10.dp),
+                contentPadding = PaddingValues(vertical = 10.dp),
+                border = BorderStroke(1.5.dp, Color(0xFF4F7CCB)),
+                colors = ButtonDefaults.buttonColors(
+                    contentColor = Color(0xFF4F7CCB),
+                    containerColor = Color.Transparent
+                ),
+                modifier = Modifier.fillMaxWidth()
+            ) {
+                Text(
+                    text = "Dismiss",
+                    style = MaterialTheme.typography.titleLarge
+                )
+            }
         }
     }
 }
