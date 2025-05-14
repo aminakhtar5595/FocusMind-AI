@@ -3,6 +3,7 @@ package com.example.focusmindai.ui.screens.task
 import androidx.compose.foundation.BorderStroke
 import androidx.compose.foundation.border
 import androidx.compose.foundation.clickable
+import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.PaddingValues
 import androidx.compose.foundation.layout.Row
@@ -113,6 +114,56 @@ fun TaskSelectionScreen() {
             ) {
                 Text(
                     text = "Dismiss",
+                    style = MaterialTheme.typography.titleLarge
+                )
+            }
+        }
+
+        Row (
+            modifier = Modifier.fillMaxWidth(),
+            horizontalArrangement = Arrangement.SpaceBetween
+        ) {
+            Button(
+                onClick = {  },
+                shape = RoundedCornerShape(10.dp),
+                border = BorderStroke(1.5.dp, Color(0xFF4F7CCB)),
+                colors = ButtonDefaults.buttonColors(
+                    contentColor = Color(0xFF4F7CCB),
+                    containerColor = Color.Transparent
+                ),
+            ) {
+                Text(
+                    text = "Start",
+                    style = MaterialTheme.typography.titleLarge
+                )
+            }
+
+            Button(
+                onClick = {  },
+                shape = RoundedCornerShape(10.dp),
+                border = BorderStroke(1.5.dp, Color(0xFF4F7CCB)),
+                colors = ButtonDefaults.buttonColors(
+                    contentColor = Color(0xFF4F7CCB),
+                    containerColor = Color.Transparent
+                ),
+            ) {
+                Text(
+                    text = "Pause",
+                    style = MaterialTheme.typography.titleLarge
+                )
+            }
+
+            Button(
+                onClick = {  },
+                shape = RoundedCornerShape(10.dp),
+                border = BorderStroke(1.5.dp, Color(0xFF4F7CCB)),
+                colors = ButtonDefaults.buttonColors(
+                    contentColor = Color(0xFF4F7CCB),
+                    containerColor = Color.Transparent
+                ),
+            ) {
+                Text(
+                    text = "Reset",
                     style = MaterialTheme.typography.titleLarge
                 )
             }
