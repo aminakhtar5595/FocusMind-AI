@@ -83,6 +83,11 @@ fun TaskSelectionScreen() {
                         .size(28.dp)
                         .clickable { }
                 )
+                Text(
+                    text = "SUGGESTIONS",
+                    style = MaterialTheme.typography.titleLarge,
+                    modifier = Modifier.padding(start = 10.dp)
+                )
             }
         }
     }
