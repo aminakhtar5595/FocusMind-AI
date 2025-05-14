@@ -89,6 +89,12 @@ fun TaskSelectionScreen() {
                     modifier = Modifier.padding(start = 10.dp)
                 )
             }
+
+            Text(
+                text = "Listen to this focus playlist!",
+                style = MaterialTheme.typography.bodyLarge,
+                modifier = Modifier.padding(vertical = 10.dp)
+            )
         }
     }
 }
