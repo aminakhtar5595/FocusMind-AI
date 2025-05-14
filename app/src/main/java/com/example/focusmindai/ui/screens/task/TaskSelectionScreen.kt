@@ -11,7 +11,9 @@ import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.ArrowBack
+import androidx.compose.material.icons.filled.ArrowForward
 import androidx.compose.material.icons.filled.Menu
+import androidx.compose.material.icons.filled.Settings
 import androidx.compose.material3.Icon
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
@@ -64,6 +66,24 @@ fun TaskSelectionScreen() {
                 text = "Study biology",
                 style = MaterialTheme.typography.titleLarge
             )
+        }
+
+        Column (
+            modifier = Modifier
+                .padding(bottom = 20.dp)
+                .border(width = 0.5.dp, color = Color.Black, shape = RoundedCornerShape(10))
+                .padding(15.dp)
+                .fillMaxWidth(),
+        ) {
+            Row {
+                Icon(
+                    imageVector = Icons.Filled.Settings,
+                    contentDescription = "Settings",
+                    modifier = Modifier
+                        .size(28.dp)
+                        .clickable { }
+                )
+            }
         }
     }
 }
