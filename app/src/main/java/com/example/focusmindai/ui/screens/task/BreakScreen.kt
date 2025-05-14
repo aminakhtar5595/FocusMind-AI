@@ -34,6 +34,11 @@ fun BreakScreen() {
                     .size(30.dp)
                     .clickable { }
             )
+            Text(
+                text = "BREAK",
+                style = MaterialTheme.typography.headlineLarge.copy(textAlign = TextAlign.Center),
+                modifier = Modifier.fillMaxWidth()
+            )
         }
     }
 }
