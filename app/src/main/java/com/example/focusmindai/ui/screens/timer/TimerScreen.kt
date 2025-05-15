@@ -60,6 +60,15 @@ fun TimerScreen() {
                         .size(30.dp)
                         .clickable { }
                 )
+
+                Column (
+                    modifier = Modifier.padding(start = 10.dp)
+                ) {
+                    Text(
+                        text = "Practice Piano",
+                        style = MaterialTheme.typography.headlineSmall,
+                    )
+                }
             }
         }
     }
