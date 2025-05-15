@@ -34,6 +34,11 @@ fun TimerScreen() {
                     .size(30.dp)
                     .clickable { }
             )
+            Text(
+                text = "POMODORO TIMER",
+                style = MaterialTheme.typography.headlineLarge.copy(textAlign = TextAlign.Center),
+                modifier = Modifier.fillMaxWidth()
+            )
         }
     }
 }
