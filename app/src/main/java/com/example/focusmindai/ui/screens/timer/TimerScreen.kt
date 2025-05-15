@@ -99,7 +99,7 @@ fun TimerScreen() {
                         style = MaterialTheme.typography.headlineSmall,
                     )
                     Text(
-                        text = "Break",
+                        text = "Study",
                         style = MaterialTheme.typography.bodyLarge,
                     )
                 }
@@ -121,7 +121,14 @@ fun TimerScreen() {
                         .size(30.dp)
                         .clickable { }
                 )
-
+                Column (
+                    modifier = Modifier.padding(start = 10.dp)
+                ) {
+                    Text(
+                        text = "Read book",
+                        style = MaterialTheme.typography.headlineSmall,
+                    )
+                }
             }
         }
     }
