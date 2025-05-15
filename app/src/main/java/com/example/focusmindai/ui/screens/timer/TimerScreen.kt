@@ -105,5 +105,24 @@ fun TimerScreen() {
                 }
             }
         }
+
+        Column (
+            modifier = Modifier
+                .padding(bottom = 20.dp)
+                .border(width = 0.5.dp, color = Color.Black, shape = RoundedCornerShape(10))
+                .padding(15.dp)
+                .fillMaxWidth(),
+        ) {
+            Row {
+                Icon(
+                    imageVector = Icons.Filled.Check,
+                    contentDescription = "Tick Icon",
+                    modifier = Modifier
+                        .size(30.dp)
+                        .clickable { }
+                )
+
+            }
+        }
     }
 }
