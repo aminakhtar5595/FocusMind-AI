@@ -98,6 +98,10 @@ fun TimerScreen() {
                         text = "Study Biology",
                         style = MaterialTheme.typography.headlineSmall,
                     )
+                    Text(
+                        text = "Break",
+                        style = MaterialTheme.typography.bodyLarge,
+                    )
                 }
             }
         }
