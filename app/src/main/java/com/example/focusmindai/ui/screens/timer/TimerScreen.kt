@@ -91,7 +91,14 @@ fun TimerScreen() {
                         .size(30.dp)
                         .clickable { }
                 )
-
+                Column (
+                    modifier = Modifier.padding(start = 10.dp)
+                ) {
+                    Text(
+                        text = "Study Biology",
+                        style = MaterialTheme.typography.headlineSmall,
+                    )
+                }
             }
         }
     }
