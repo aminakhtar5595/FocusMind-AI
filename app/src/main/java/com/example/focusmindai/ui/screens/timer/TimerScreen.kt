@@ -128,6 +128,10 @@ fun TimerScreen() {
                         text = "Read book",
                         style = MaterialTheme.typography.headlineSmall,
                     )
+                    Text(
+                        text = "Study",
+                        style = MaterialTheme.typography.bodyLarge,
+                    )
                 }
             }
         }
